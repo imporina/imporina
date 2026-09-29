@@ -921,6 +921,49 @@ footer{
   color:#fff;
 }
 
+/* SOCIAL MEDIA */
+
+.social-icons{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:18px;
+}
+
+.social-icon{
+  width:44px;
+  height:44px;
+
+  border-radius:14px;
+
+  display:grid;
+  place-items:center;
+
+  background:#fff;
+
+  color:var(--navy);
+
+  border:
+    1px solid rgba(255,255,255,.12);
+
+  transition:.2s ease;
+}
+
+.social-icon:hover{
+  transform:translateY(-2px);
+
+  box-shadow:
+    0 10px 24px rgba(0,0,0,.20);
+}
+
+.social-icon svg{
+  width:21px;
+  height:21px;
+
+  display:block;
+}
+
 .copyright{
   border-top:
     1px solid rgba(255,255,255,.10);
@@ -952,7 +995,8 @@ footer{
 
   min-height:58px;
 
-  padding:0 22px 0 17px;
+  padding:
+    0 22px 0 17px;
 
   border-radius:999px;
 
@@ -1113,6 +1157,8 @@ footer{
 }
 
 </style>
+
+<!-- STRUCTURED DATA -->
 
 <script type="application/ld+json">
 {
@@ -1733,6 +1779,8 @@ footer{
 
     <div class="footer-grid">
 
+      <!-- BRAND -->
+
       <div>
 
         <a
@@ -1753,6 +1801,8 @@ footer{
         </p>
 
       </div>
+
+      <!-- NAVIGATION -->
 
       <div>
 
@@ -1782,6 +1832,8 @@ footer{
 
       </div>
 
+      <!-- CONTACT & SOCIAL -->
+
       <div>
 
         <div class="footer-title">
@@ -1802,10 +1854,146 @@ footer{
             +62 858-8227-7688
           </a>
 
+        </div>
+
+        <!-- SOCIAL MEDIA -->
+
+        <div class="social-icons">
+
+          <!-- INSTAGRAM -->
+
           <a
-            href="https://imporina.netlify.app/"
+            aria-label="Instagram ImpoRina"
+            class="social-icon"
+            href="https://instagram.com/imporina88"
+            target="_blank"
+            rel="noopener"
           >
-            imporina.netlify.app
+
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.9"
+              viewBox="0 0 24 24"
+            >
+
+              <rect
+                height="18"
+                rx="5"
+                width="18"
+                x="3"
+                y="3"
+              ></rect>
+
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+              ></circle>
+
+              <circle
+                cx="17.5"
+                cy="6.5"
+                r="1"
+                fill="currentColor"
+                stroke="none"
+              ></circle>
+
+            </svg>
+
+          </a>
+
+          <!-- TIKTOK -->
+
+          <a
+            aria-label="TikTok ImpoRina"
+            class="social-icon"
+            href="https://www.tiktok.com/@imporina88"
+            target="_blank"
+            rel="noopener"
+          >
+
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+
+              <path
+                d="M14 4v10.3a4.3 4.3 0 1 1-3.4-4.2"
+              ></path>
+
+              <path
+                d="M14 4c.7 2.8 2.4 4.4 5 4.8"
+              ></path>
+
+            </svg>
+
+          </a>
+
+          <!-- YOUTUBE -->
+
+          <a
+            aria-label="YouTube ImpoRina"
+            class="social-icon"
+            href="https://www.youtube.com/@esairina"
+            target="_blank"
+            rel="noopener"
+          >
+
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              viewBox="0 0 24 24"
+            >
+
+              <rect
+                height="13"
+                rx="4"
+                width="19"
+                x="2.5"
+                y="5.5"
+              ></rect>
+
+              <path
+                d="M10 9l5 3-5 3z"
+                fill="currentColor"
+                stroke="none"
+              ></path>
+
+            </svg>
+
+          </a>
+
+          <!-- THREADS -->
+
+          <a
+            aria-label="Threads ImpoRina"
+            class="social-icon"
+            href="https://www.threads.net/@imporina88"
+            target="_blank"
+            rel="noopener"
+          >
+
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.8"
+              viewBox="0 0 24 24"
+            >
+
+              <path
+                d="M16.7 8.7c-.8-2-2.5-3.2-4.7-3.2-3.6 0-5.8 2.6-5.8 6.5s2.2 6.5 5.9 6.5c3.1 0 5.2-1.6 5.2-4.1 0-2.2-1.7-3.6-4.4-3.6-2.1 0-3.8.9-3.8 2.5 0 1.2 1 2.1 2.4 2.1 2.2 0 3.9-1.8 3.9-4.4 0-3.4-1.8-5.5-4.9-5.5"
+              ></path>
+
+            </svg>
+
           </a>
 
         </div>
@@ -1847,8 +2035,9 @@ footer{
     viewBox="0 0 24 24"
   >
 
-    <path d="M12 2a9.7 9.7 0 0 0-8.3 14.7L2.4 22l5.5-1.4A9.8 9.8 0 1 0 12 2Zm0 17.7c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.2.8.9-3.1-.2-.3a7.7 7.7 0 1 1 7 4Zm4.2-5.7c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8.9-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.5.3-.4c.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.9-2-.2-.5-.5-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.2-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.4-.6 1.6-1.1.2-.6.2-1 .2-1.1-.1-.1-.3-.2-.6-.3Z">
-    </path>
+    <path
+      d="M12 2a9.7 9.7 0 0 0-8.3 14.7L2.4 22l5.5-1.4A9.8 9.8 0 1 0 12 2Zm0 17.7c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.2.8.9-3.1-.2-.3a7.7 7.7 0 1 1 7 4Zm4.2-5.7c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8.9-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.5.3-.4c.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.9-2-.2-.5-.5-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.2-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.4-.6 1.6-1.1.2-.6.2-1 .2-1.1-.1-.1-.3-.2-.6-.3Z"
+    ></path>
 
   </svg>
 
@@ -1859,22 +2048,32 @@ footer{
 </a>
 
 <!-- =========================
-     CONFIG
+     LINK CONFIGURATION
 ========================= -->
 
 <script>
 
-/*
-  ISI LINK DI SINI
-*/
-
 const EBOOK_CONFIG = {
 
-  previewFileId:
-    "GANTI_DENGAN_LINK_PREVIEW",
+  /*
+    Contoh URL embed preview:
+    https://drive.google.com/file/d/FILE_ID/preview
+  */
+
+  previewEmbedUrl:
+    "GANTI_DENGAN_LINK_EMBED_PREVIEW",
+
+  /*
+    Link ketika tombol
+    "Buka Preview Lebih Besar" diklik.
+  */
 
   previewViewUrl:
     "GANTI_DENGAN_LINK_PREVIEW",
+
+  /*
+    Link halaman pembelian.
+  */
 
   buyUrl:
     "GANTI_DENGAN_LINK_PEMBELIAN"
@@ -1882,11 +2081,18 @@ const EBOOK_CONFIG = {
 };
 
 
-/* PREVIEW */
+/* =========================
+   PREVIEW
+========================= */
 
 const hasPreview =
-  EBOOK_CONFIG.previewFileId &&
-  !EBOOK_CONFIG.previewFileId.includes("GANTI_");
+  EBOOK_CONFIG.previewEmbedUrl &&
+  !EBOOK_CONFIG.previewEmbedUrl.includes("GANTI_");
+
+
+const hasPreviewView =
+  EBOOK_CONFIG.previewViewUrl &&
+  !EBOOK_CONFIG.previewViewUrl.includes("GANTI_");
 
 
 const hasBuy =
@@ -1909,25 +2115,13 @@ const empty =
 if(hasPreview){
 
   preview.src =
-    `https://drive.google.com/file/d/${EBOOK_CONFIG.previewFileId}/preview`;
+    EBOOK_CONFIG.previewEmbedUrl;
 
   preview.style.display =
     "block";
 
   empty.style.display =
     "none";
-
-
-  document
-    .querySelectorAll(
-      ".preview-link"
-    )
-    .forEach(a => {
-
-      a.href =
-        EBOOK_CONFIG.previewViewUrl;
-
-    });
 
 }else{
 
@@ -1937,22 +2131,37 @@ if(hasPreview){
   empty.style.display =
     "grid";
 
+}
 
-  document
-    .querySelectorAll(
-      ".preview-link"
-    )
-    .forEach(a => {
+
+/* =========================
+   PREVIEW BUTTON
+========================= */
+
+document
+  .querySelectorAll(
+    ".preview-link"
+  )
+  .forEach(a => {
+
+    if(hasPreviewView){
+
+      a.href =
+        EBOOK_CONFIG.previewViewUrl;
+
+    }else{
 
       a.style.display =
         "none";
 
-    });
+    }
 
-}
+  });
 
 
-/* PEMBELIAN */
+/* =========================
+   BUY BUTTON
+========================= */
 
 document
   .querySelectorAll(
