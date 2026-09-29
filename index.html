@@ -510,18 +510,11 @@
 </footer>
 
 <div class="wa-wrap">
-  <div aria-label="Pilih nomor WhatsApp" class="wa-menu" id="waMenu">
-    <div class="wa-menu-title">Pilih nomor WhatsApp</div>
-    <a class="wa-choice" href="https://wa.me/6285882277688?text=Halo%20ImpoRina%2C%20saya%20ingin%20konsultasi%20impor%20dari%20China." rel="noopener" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a9.7 9.7 0 0 0-8.3 14.7L2.4 22l5.5-1.4A9.8 9.8 0 1 0 12 2Zm0 17.7c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.2.8.9-3.1-.2-.3a7.7 7.7 0 1 1 7 4Zm4.2-5.7c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8.9-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.5.3-.4c.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.9-2-.2-.5-.5-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.2-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.4-.6 1.6-1.1.2-.6.2-1 .2-1.1-.1-.1-.3-.2-.6-.3Z"></path></svg><span>+62 858-8227-7688</span></a>
-  </div>
-  <button aria-expanded="false" aria-label="Konsultasi Sekarang melalui WhatsApp" class="wa-float" id="waFloat" onclick="toggleWaMenu(event)" type="button"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a9.7 9.7 0 0 0-8.3 14.7L2.4 22l5.5-1.4A9.8 9.8 0 1 0 12 2Zm0 17.7c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.2.8.9-3.1-.2-.3a7.7 7.7 0 1 1 7 4Zm4.2-5.7c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8.9-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.5.3-.4c.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.9-2-.2-.5-.5-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.2-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.4-.6 1.6-1.1.2-.6.2-1 .2-1.1-.1-.1-.3-.2-.6-.3Z"></path></svg><span>Konsultasi Sekarang!</span></button>
+  <a aria-label="Konsultasi Sekarang melalui WhatsApp" class="wa-float" href="https://wa.me/6285882277688?text=Halo%20ImpoRina%2C%20saya%20ingin%20konsultasi%20impor%20dari%20China." rel="noopener" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a9.7 9.7 0 0 0-8.3 14.7L2.4 22l5.5-1.4A9.8 9.8 0 1 0 12 2Zm0 17.7c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.2.8.9-3.1-.2-.3a7.7 7.7 0 1 1 7 4Zm4.2-5.7c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8.9-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.5.3-.4c.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.9-2-.2-.5-.5-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.2-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.4-.6 1.6-1.1.2-.6.2-1 .2-1.1-.1-.1-.3-.2-.6-.3Z"></path></svg><span>Konsultasi Sekarang!</span></a>
 </div>
 
 <script>
 document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open')));
-function toggleWaMenu(event){event.stopPropagation();const menu=document.getElementById('waMenu');const btn=document.getElementById('waFloat');const open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');}
-document.addEventListener('click',()=>{const menu=document.getElementById('waMenu');const btn=document.getElementById('waFloat');if(menu){menu.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
-document.getElementById('waMenu')?.addEventListener('click',e=>e.stopPropagation());
 </script>
 </body>
 </html>
