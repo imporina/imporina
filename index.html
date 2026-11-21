@@ -319,26 +319,31 @@
     @media(max-width:980px){.solution-grid,.network-wrap,.official-grid,.content-compact-box{grid-template-columns:1fr}.content-links{grid-template-columns:repeat(2,1fr)}.section-head p{margin-top:0}}
     @media(max-width:640px){.solution-grid,.doc-grid,.content-links{grid-template-columns:1fr}.network-main,.network-side,.official-card,.content-compact-box{padding:28px 22px}.wa-wrap{right:14px;bottom:14px}.wa-wrap .wa-float{height:54px;padding:0 18px 0 15px;font-size:14px}.wa-wrap .wa-float svg{width:26px;height:26px}.wa-menu{right:0;bottom:66px;width:min(280px,calc(100vw - 28px))}.brand-logo{height:52px;max-width:165px}.footer-brand .brand-logo{height:52px;max-width:165px}}
 
-    /* YOUTUBE PLAYLIST · 3 VIDEO TERBARU */
-    .youtube-latest{background:#fff}
-    .youtube-head-actions{display:flex;align-items:center;justify-content:flex-end}
+    /* VIDEO TERBARU · MENYATU DENGAN TIPS & BELAJAR IMPOR */
+    .youtube-area{grid-column:1/-1;margin-top:10px;padding-top:34px;border-top:1px solid var(--line)}
+    .youtube-subhead{margin-bottom:24px}
+    .youtube-subhead h2{font-size:clamp(28px,3.2vw,40px);margin-top:16px}
+    .youtube-subhead p{margin-top:10px;max-width:680px;color:var(--muted)}
+    .youtube-head-actions{display:flex;align-items:center;justify-content:flex-end;margin-top:22px}
     .youtube-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
     .youtube-card{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 10px 34px rgba(15,23,42,.06);transition:.22s ease}
     .youtube-card:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(15,23,42,.10)}
-    .youtube-thumb{position:relative;display:block;aspect-ratio:16/9;background:#e9edf4;overflow:hidden}
+    .youtube-media{position:relative;aspect-ratio:16/9;background:#e9edf4;overflow:hidden}
+    .youtube-thumb{position:relative;display:block;width:100%;height:100%;padding:0;border:0;background:#e9edf4;overflow:hidden;cursor:pointer;text-align:left}
     .youtube-thumb img{width:100%;height:100%;display:block;object-fit:cover;transition:.3s ease}
     .youtube-card:hover .youtube-thumb img{transform:scale(1.025)}
     .youtube-play{position:absolute;left:18px;bottom:16px;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:rgba(239,51,64,.96);color:#fff;box-shadow:0 10px 28px rgba(239,51,64,.30)}
     .youtube-play svg{width:20px;height:20px;fill:currentColor;margin-left:2px}
+    .youtube-embed{width:100%;height:100%;border:0;display:block}
     .youtube-body{padding:20px}
-    .youtube-date{font-size:12px;font-weight:800;color:var(--red);letter-spacing:.02em}
-    .youtube-title{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;margin-top:7px;font-size:18px;line-height:1.35;color:var(--navy);min-height:49px}
+    .youtube-title{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;font-size:18px;line-height:1.35;color:var(--navy);min-height:49px}
     .youtube-watch{display:inline-flex;align-items:center;gap:7px;margin-top:16px;color:var(--red);font-size:13px;font-weight:850}
     .youtube-state{grid-column:1/-1;border:1px dashed #d8dde7;border-radius:22px;padding:32px;text-align:center;background:var(--soft);color:var(--muted)}
     .youtube-state strong{display:block;color:var(--navy);font-size:17px;margin-bottom:4px}
-    .youtube-note{font-size:12px;color:#98a2b3;margin-top:16px}
-    @media(max-width:980px){.youtube-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:980px){.youtube-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.youtube-subhead{align-items:flex-start}}
     @media(max-width:640px){
+      .youtube-area{margin-top:6px;padding-top:28px}
+      .youtube-subhead{margin-bottom:20px}
       .youtube-head-actions{justify-content:flex-start;margin-top:18px}
       .youtube-grid{display:flex;overflow-x:auto;gap:16px;scroll-snap-type:x mandatory;scroll-padding-left:0;padding-bottom:8px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
       .youtube-grid::-webkit-scrollbar{display:none}
@@ -363,7 +368,6 @@
         <a href="#alur">Cara Kerja</a>
         <a href="#ebook">E-Book</a>
         <a href="#edukasi">Konten</a>
-        <a href="#video-terbaru">Video</a>
         <a href="#faq">FAQ</a>
       </div>
       
@@ -502,34 +506,29 @@
 </section>
 
 <section class="section content-compact" id="edukasi">
-  <div class="container content-compact-box">
-    <div><span class="eyebrow"><span class="dot"></span> Tips &amp; belajar impor</span><h2 style="margin-top:16px">Tips, trik, dan referensi impor yang bisa langsung dipelajari.</h2><p>ImpoRina juga aktif berbagi tips, trik, dan informasi praktis seputar cara impor dari China, supplier, CBM, packing, LCL vs FCL, ETA/ETD, serta hal-hal yang sering ditemui saat menyiapkan shipment.</p><div class="social-icons" style="margin-top:20px"><a aria-label="Instagram ImpoRina" class="social-icon" href="https://instagram.com/imporina88" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.9" viewBox="0 0 24 24"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" fill="currentColor" r="1" stroke="none"></circle></svg></a><a aria-label="TikTok ImpoRina" class="social-icon" href="https://www.tiktok.com/@imporina88" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M14 4v10.3a4.3 4.3 0 1 1-3.4-4.2"></path><path d="M14 4c.7 2.8 2.4 4.4 5 4.8"></path></svg></a><a aria-label="YouTube ImpoRina" class="social-icon" href="https://www.youtube.com/@esairina" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect height="13" rx="4" width="19" x="2.5" y="5.5"></rect><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"></path></svg></a><a aria-label="Threads ImpoRina" class="social-icon" href="https://www.threads.net/@imporina88" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M16.7 8.7c-.8-2-2.5-3.2-4.7-3.2-3.6 0-5.8 2.6-5.8 6.5s2.2 6.5 5.9 6.5c3.1 0 5.2-1.6 5.2-4.1 0-2.2-1.7-3.6-4.4-3.6-2.1 0-3.8.9-3.8 2.5 0 1.2 1 2.1 2.4 2.1 2.2 0 3.9-1.8 3.9-4.4 0-3.4-1.8-5.5-4.9-5.5"></path></svg></a></div></div>
-    <div class="content-links"><a class="content-link" href="#ebook"><b>E-Book Impor</b><small>Materi lebih runtut untuk dipelajari.</small></a><a class="content-link" href="https://www.youtube.com/@esairina" rel="noopener" target="_blank"><b>Video Edukasi</b><small>Pembahasan visual di YouTube.</small></a><a class="content-link" href="https://www.instagram.com/imporina88" rel="noopener" target="_blank"><b>Tips Singkat</b><small>Konten praktis di Instagram.</small></a><a class="content-link" href="https://www.tiktok.com/@imporina88" rel="noopener" target="_blank"><b>Quick Learning</b><small>Penjelasan singkat di TikTok.</small></a></div>
-  </div>
-</section>
-
-<section class="section youtube-latest" id="video-terbaru">
   <div class="container">
-    <div class="section-head">
-      <div>
-        <span class="eyebrow"><span class="dot"></span> Video terbaru seputar impor</span>
-        <h2 style="margin-top:16px">Belajar impor lewat pembahasan yang lebih praktis.</h2>
-      </div>
-      <div>
-        <p>Video di bawah diambil dari playlist khusus konten impor ImpoRina, sehingga topik lain di channel YouTube tidak ikut ditampilkan.</p>
+    <div class="content-compact-box">
+      <div><span class="eyebrow"><span class="dot"></span> Tips &amp; belajar impor</span><h2 style="margin-top:16px">Tips, trik, dan referensi impor yang bisa langsung dipelajari.</h2><p>ImpoRina juga aktif berbagi tips, trik, dan informasi praktis seputar cara impor dari China, supplier, CBM, packing, LCL vs FCL, ETA/ETD, serta hal-hal yang sering ditemui saat menyiapkan shipment.</p><div class="social-icons" style="margin-top:20px"><a aria-label="Instagram ImpoRina" class="social-icon" href="https://instagram.com/imporina88" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.9" viewBox="0 0 24 24"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" fill="currentColor" r="1" stroke="none"></circle></svg></a><a aria-label="TikTok ImpoRina" class="social-icon" href="https://www.tiktok.com/@imporina88" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M14 4v10.3a4.3 4.3 0 1 1-3.4-4.2"></path><path d="M14 4c.7 2.8 2.4 4.4 5 4.8"></path></svg></a><a aria-label="YouTube ImpoRina" class="social-icon" href="https://www.youtube.com/@esairina" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect height="13" rx="4" width="19" x="2.5" y="5.5"></rect><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"></path></svg></a><a aria-label="Threads ImpoRina" class="social-icon" href="https://www.threads.net/@imporina88" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M16.7 8.7c-.8-2-2.5-3.2-4.7-3.2-3.6 0-5.8 2.6-5.8 6.5s2.2 6.5 5.9 6.5c3.1 0 5.2-1.6 5.2-4.1 0-2.2-1.7-3.6-4.4-3.6-2.1 0-3.8.9-3.8 2.5 0 1.2 1 2.1 2.4 2.1 2.2 0 3.9-1.8 3.9-4.4 0-3.4-1.8-5.5-4.9-5.5"></path></svg></a></div></div>
+      <div class="content-links"><a class="content-link" href="#ebook"><b>E-Book Impor</b><small>Materi lebih runtut untuk dipelajari.</small></a><a class="content-link" href="https://www.youtube.com/@esairina" rel="noopener" target="_blank"><b>Video Edukasi</b><small>Pembahasan visual di YouTube.</small></a><a class="content-link" href="https://www.instagram.com/imporina88" rel="noopener" target="_blank"><b>Tips Singkat</b><small>Konten praktis di Instagram.</small></a><a class="content-link" href="https://www.tiktok.com/@imporina88" rel="noopener" target="_blank"><b>Quick Learning</b><small>Penjelasan singkat di TikTok.</small></a></div>
+
+      <div class="youtube-area" id="video-terbaru">
+        <div class="youtube-subhead">
+          <span class="eyebrow"><span class="dot"></span> Video terbaru</span>
+          <h2>Belajar impor lewat video.</h2>
+          <p>Pembahasan praktis seputar impor dari China yang bisa langsung kamu tonton di sini.</p>
+        </div>
+
+        <div class="youtube-grid" id="youtubeGrid" aria-live="polite">
+          <div class="youtube-state">
+            <strong>Memuat video terbaru…</strong>
+          </div>
+        </div>
+
         <div class="youtube-head-actions">
           <a class="btn btn-secondary" href="https://youtube.com/playlist?list=PLOY8p_48uzHc" rel="noopener" target="_blank">Lihat Semua Video →</a>
         </div>
       </div>
     </div>
-
-    <div class="youtube-grid" id="youtubeGrid" aria-live="polite">
-      <div class="youtube-state">
-        <strong>Memuat video terbaru…</strong>
-        <span>Konten akan tampil otomatis dari playlist ImpoRina.</span>
-      </div>
-    </div>
-    <p class="youtube-note">Tiga video terbaru ditampilkan otomatis dari playlist “Belajar Impor dari Nol”.</p>
   </div>
 </section>
 
@@ -557,7 +556,7 @@
         <div class="footer-tagline">Impor Jadi Mudah</div>
         <p class="footer-text">Solusi impor dari China ke Indonesia untuk kebutuhan impor resmi, LCL/FCL, sea freight, air freight, konsolidasi, shipment rutin, serta akses jaringan importir.</p>
       </div>
-      <div><div class="footer-title">Navigasi</div><div class="footer-links"><a href="#solusi">Solusi Impor</a><a href="#impor-resmi">Impor Resmi</a><a href="#jaringan-importir">Jaringan Importir</a><a href="#alur">Cara Kerja</a><a href="#ebook">E-Book</a><a href="#edukasi">Konten</a><a href="#video-terbaru">Video Terbaru</a><a href="#faq">FAQ</a></div></div>
+      <div><div class="footer-title">Navigasi</div><div class="footer-links"><a href="#solusi">Solusi Impor</a><a href="#impor-resmi">Impor Resmi</a><a href="#jaringan-importir">Jaringan Importir</a><a href="#alur">Cara Kerja</a><a href="#ebook">E-Book</a><a href="#edukasi">Konten</a><a href="#faq">FAQ</a></div></div>
       <div><div class="footer-title">Kontak</div><div class="footer-links"><a href="mailto:imporina88@gmail.com">imporina88@gmail.com</a><div class="contact-numbers"><a href="https://wa.me/6285882277688" rel="noopener" target="_blank">+62 858-8227-7688</a></div></div><div class="social-icons" style="margin-top:16px"><a aria-label="Instagram ImpoRina" class="social-icon" href="https://instagram.com/imporina88" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.9" viewBox="0 0 24 24"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" fill="currentColor" r="1" stroke="none"></circle></svg></a><a aria-label="TikTok ImpoRina" class="social-icon" href="https://www.tiktok.com/@imporina88" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M14 4v10.3a4.3 4.3 0 1 1-3.4-4.2"></path><path d="M14 4c.7 2.8 2.4 4.4 5 4.8"></path></svg></a><a aria-label="YouTube ImpoRina" class="social-icon" href="https://www.youtube.com/@esairina" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect height="13" rx="4" width="19" x="2.5" y="5.5"></rect><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"></path></svg></a><a aria-label="Threads ImpoRina" class="social-icon" href="https://www.threads.net/@imporina88" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M16.7 8.7c-.8-2-2.5-3.2-4.7-3.2-3.6 0-5.8 2.6-5.8 6.5s2.2 6.5 5.9 6.5c3.1 0 5.2-1.6 5.2-4.1 0-2.2-1.7-3.6-4.4-3.6-2.1 0-3.8.9-3.8 2.5 0 1.2 1 2.1 2.4 2.1 2.2 0 3.9-1.8 3.9-4.4 0-3.4-1.8-5.5-4.9-5.5"></path></svg></a></div></div>
     </div>
     <div class="copyright"><span>© 2026 ImpoRina.</span><span>Solusi Impor China–Indonesia</span></div>
@@ -573,16 +572,25 @@ document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',(
 
 const YOUTUBE_PLAYLIST_URL = 'https://youtube.com/playlist?list=PLOY8p_48uzHc';
 
-function formatYoutubeDate(value){
-  try{
-    return new Intl.DateTimeFormat('id-ID',{day:'numeric',month:'long',year:'numeric'}).format(new Date(value));
-  }catch(e){
-    return '';
-  }
+function escapeHtml(value=''){
+  return String(value).replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch] || ch));
 }
 
-function escapeHtml(value=''){
-  return String(value).replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','\"':'&quot;'}[ch] || ch));
+function playYoutubeInline(button){
+  const videoId = button.dataset.videoId;
+  const title = button.dataset.videoTitle || 'Video ImpoRina';
+  const media = button.closest('.youtube-media');
+  if(!videoId || !media) return;
+
+  media.innerHTML = `
+    <iframe
+      class="youtube-embed"
+      src="https://www.youtube.com/embed/${encodeURIComponent(videoId)}?autoplay=1&rel=0"
+      title="${escapeHtml(title)}"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  `;
 }
 
 async function loadLatestYoutubeVideos(){
@@ -599,25 +607,34 @@ async function loadLatestYoutubeVideos(){
 
     grid.innerHTML = videos.map(video => `
       <article class="youtube-card">
-        <a class="youtube-thumb" href="${escapeHtml(video.url)}" target="_blank" rel="noopener" aria-label="Tonton ${escapeHtml(video.title)} di YouTube">
-          <img src="${escapeHtml(video.thumbnail)}" alt="Thumbnail ${escapeHtml(video.title)}" loading="lazy">
-          <span class="youtube-play" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
-          </span>
-        </a>
+        <div class="youtube-media">
+          <button
+            class="youtube-thumb"
+            type="button"
+            data-video-id="${escapeHtml(video.videoId)}"
+            data-video-title="${escapeHtml(video.title)}"
+            aria-label="Putar ${escapeHtml(video.title)} di halaman ini">
+            <img src="${escapeHtml(video.thumbnail)}" alt="Thumbnail ${escapeHtml(video.title)}" loading="lazy">
+            <span class="youtube-play" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+            </span>
+          </button>
+        </div>
         <div class="youtube-body">
-          <div class="youtube-date">${escapeHtml(formatYoutubeDate(video.published))}</div>
           <h3 class="youtube-title">${escapeHtml(video.title)}</h3>
           <a class="youtube-watch" href="${escapeHtml(video.url)}" target="_blank" rel="noopener">Tonton di YouTube <span>→</span></a>
         </div>
       </article>
     `).join('');
+
+    grid.querySelectorAll('.youtube-thumb').forEach(button => {
+      button.addEventListener('click', () => playYoutubeInline(button));
+    });
   }catch(error){
     grid.innerHTML = `
       <div class="youtube-state">
         <strong>Video belum dapat dimuat.</strong>
-        <span>Anda tetap bisa membuka playlist ImpoRina langsung di YouTube.</span><br>
-        <a class="youtube-watch" href="${YOUTUBE_PLAYLIST_URL}" target="_blank" rel="noopener">Buka playlist →</a>
+        <a class="youtube-watch" href="${YOUTUBE_PLAYLIST_URL}" target="_blank" rel="noopener">Lihat video di YouTube →</a>
       </div>
     `;
   }
